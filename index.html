@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bellybutton Biodiversity</title>
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./static/js/app.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1>Belly Button Biodiversity Dashboard</h1>
+                <p>Use the interactive charts below to explore the dataset</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>The coolest study of biodiversity on the human body on the planet! </h3>
+                <p><u>From the study's website:</u></p>
+                <p><i>The belly button is one of the habitats closest to us, and yet it remains relatively unexplored. In January 2011, we launched Belly Button Biodiversity to investigate the microbes inhabiting our navels and the factors that might influence
+                    the microscopic life calling this protected, moist patch of skin home. In addition to inspiring scientific curiosity, Belly Button Biodiversity inspired conversations about the beneficial roles microbes play in our daily lives.</i></p>
+                <p>Click this <a href="http://robdunnlab.com/projects/belly-button-biodiversity/" target="_blank">link</a> for the full data experiment.</p>
+            </div>
+        </div>
+    </div>
+    <hr style="border-width: 3px;border-color: lightskyblue;">
+    <div class="container-fluid" id="progress_gif">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="plots" style="display: none;">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="well">
+                    <h5>Test Subject ID #:</h5>
+                    <select id="selDataset"></select>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Demographic Info</h3>
+                    </div>
+                    <div id="sample-metadata" class="panel-body"></div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div id="bar"></div>
+            </div>
+            <div class="col-md-5">
+                <div id="gauge"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="bubble"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
