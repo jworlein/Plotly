@@ -64,11 +64,6 @@ The following task is advanced and therefore optional.
 
 * Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
 
-## Hints
-
-* Use `console.log` inside of your JavaScript code to see what your data looks like at each step.
-
-* Refer to the [Plotly.js documentation](https://plot.ly/javascript/) when building the plots.
 
 ### About the Data
 
